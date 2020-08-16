@@ -1,0 +1,86 @@
+// google fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$main-black: #000000;
+$sub-black: #111111;
+$dark-black: #212529;
+$red-color: #e73c3e;
+$white-color: #ffffff;
+$main-white: #fafbfc;
+$sub-main-white: #f9fafb;
+$light-color: #f4f5fe;
+$yellow-color: #fcff00;
+$sweet-color: #fdebeb;
+$blue-color: #1d90b3;
+$gray-color: #606060;
+
+$roboto-font-family: "Roboto", sans-serif;
+$rubik-font-family: "Rubik", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+
+p,
+span,
+ul li {
+  font-family: $roboto-font-family;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+button {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-family: $rubik-font-family;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1300px;
+}
+
+// Navbar Mnenu
+.nav-item {
+  .nav-link {
+    .sub-nav-item {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &:hover {
+      .sub-nav-item {
+        opacity: 1;
+        visibility: visible;
+        top: 120%;
+      }
+    }
+  }
+}
